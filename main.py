@@ -2,13 +2,18 @@ from input_handler import get_input
 from validator import validate
 from core import process
 
-def main():
-	data = get_input()
-	if validate(data):
-		result = process(data)
-		print(f"Result: {result}")
-	else:
-		print("Invalid input")
+def greeting():
+    print("Welcome to the Event Processing System!")
+    print("========================================")
 
-if __name__ == "__name__":
-main()
+def main():
+    greeting()
+    data = get_input()
+    if validate(data):
+        result = process(data)
+        print(f"Result: {result}")
+    else:
+        print("Invalid input")
+
+if __name__ == "__main__":
+    main()
