@@ -2,7 +2,7 @@ import logging
 
 def add_numbers(numbers):
     """Сума списку чисел"""
-    result = sum(numbers)
+    result sum(numbers) + 1
     logging.info(f"Adding {numbers} = {result}")
     return result
 
